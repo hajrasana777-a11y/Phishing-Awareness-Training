@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF_8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Phishing Awareness Training</title>
+        <!--CSS File-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo"> PhishGuard </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#phishing">Phishing</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header id="home">
+            <h1>Stay Safe from Phishing Attacks</h1>
+            <p>Learn  how to recognize phishing emails, fake websites, and social engineering attacks before they  steal their information.</p>
+            <a href="#quiz">
+                <button class="hero-btn">Start Quiz</button>
+            </a>
+        </header>
+        <main>
+            <section id="phishing"
+            class="phishing-section">
+            <div class="phishing-text">
+                <h2>What is Phishing</h2>
+                <p>
+                    Phishing is a cyber attack where attackers pretend to be trusted organizations to steal sensitive information such as usernames, passwords, banking details, and personal information.
+                </p>
+            </div>
+            <div class="phishing-image">
+                <img src="images/phishing.png"
+                alt="Phishing Awareness">
+            </div>
+            </section>
+            <section id="types">
+                <h2>Types of Phishing  </h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>✉️ Email Phishing</h3>
+                        <p>Fake emails that steal passwords and personal information.</p>
+                        </div>
+                        <div class="card">
+                            <h3> 📱Smishing</h3>
+                            <p>Fradulent SMS messages  asking you to click melicious liks.</p>
+                        </div>
+                        <div class="card">
+                            <h3>🎯Spear Phishing</h3>
+                            <p>Fraudulent SMS messages asking you to click malicious links.</p>
+                        </div>
+                    </div>
+            </section>
+            <section id="types">
+                <h2>How to recognize Phishing Emails</h2>
+                <div class="tips">
+                    <div class="tip-card">
+                        <h3>📧Check the sender</h3>
+                        <p>Be careful with emails that pressure you to act immediately.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>⚠️Urgent Messages</h3>
+                        <p>Be careful with emails that pressure you to act immediately.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📝Spelling Errors</h3>
+                        <p>Many phishing emails contain grammar and spelling mistakes.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🔗Suspicious Links</h3>
+                        <p>Never click unknown links or download unexpected attachments.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>How to identify Fake Websites</h2>
+                <ul>
+                    <li>Always check if website uses HTTPS.</li>
+                    <li>Look carefully at the website URL.</li>
+                    <li>Watch for spelling mistakes in the domain name.</li>
+                    <li>Avoid websites with poor design or suspicious pop-ups.</li>
+                    <li>Do not enter personsal information or untrusted websites.</li>
+                </ul>
+                <p>
+                    Example:<br>
+                    ✅ www.paypal.com<br>
+                    ❌ www.class="paypa1.com"
+                </p>
+            </section>
+            <section>
+                <h2>Social Engineering Tactics</h2>
+                <p>
+                    Social engineering is a technique used by attackers to manipulate people into revealing confidential information.
+                </p>
+                <ul>
+                    <li>Fear _ "Your account will be blocked."</li>
+                    <li>Urgency _ "Act now before it's too late."</li>
+                    <li>Trust _  "Pretending to be a bank or company."</li>
+                    <li>Curiosity _ "See who viewed your profile."</li>
+                    <li>Rewards _ "Congratulations! You won a prize."</li>
+                </ul>
+            </section>
+            <section id="best-practices">
+                <h2>Best Practices</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>🔒Use Strong Passwors</h3>
+                        <p>Create Unique and complex passwords for  every account.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🛡️Enable 2FA</h3>
+                        <p>Turnon Two-Factor Authentication for extra security.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🔄Keep Software Update</h3>
+                        <p>Install updates regularly to fix security vulnurabilities.</p>
+                    </div>
+                    <div class="card">
+                        <h3> 👀 Verify Before Clicking</h3>
+                        <p>Always check links, email, and websites before entering personal information.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="examples">
+                <h2>Real-World Phishing Examples</h2>
+                <div class="example-box">
+                    <h3>🎣Fake PayPal Email Scam</h3>
+                    <p>
+                        Cybercriminals sent fake paypal emails asking users to verify their accounts.
+                        The email contained a fake login page that  stole usernames and passwords.
+                        Many users lost access to their accounts because they entered their credentials on the fake website.
+                    </p>
+                <h4>Lesson Learned:</h4>
+                <ul>
+                    <li>Always verify the sender before clicking links.</li>
+                    <li>Be careful when an email asks  for account permissions.</li>
+                    <li>Think before you click.</li>
+                </ul>
+                </div>
+            </section>
+            <section id="quiz">
+                <h2>Interactive Quiz</h2>
+                <p><strong>Question 1:</strong>Which of the following is a sign of a phishing email?</p>
+                <button onclick="checkanswer('wrong')">Professional  Email Signature</button><br><br>
+                <button onclick="checkanswer('correct')">Urgent messsage asking for your password</button><br><br>
+                <button onclick="checkanswer('wrong')">Official  company logo</button>
+                <h3 id="result"></h3>
+                <p id="result"></p>
+            </section>
+            <section id="resources">
+                <h2>Useful Resources</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>🌐Stay Updated</h3>
+                        <p>Follow trusted cyber security news and awareness websites.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📚Learn More</h3>
+                        <p>Take free cyber security and phishing awareness courses.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🛡️Report Phishing</h3>
+                        <p>Report suspicious emails and fake websites to your email provider and organization.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2026 PhishGuard | Created by Hajra Sana </p>
+            <p>CodeAlpha Cyber  Security Internship Project</p>
+        </footer>
+        <!--JavaScript-->
+        <script src="script.js"></script>
+    </body>
+</html>
